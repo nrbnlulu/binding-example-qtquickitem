@@ -1,0 +1,6 @@
+pyside-setup 
+libclang-release_100-based-linux-Rhel7.6-gcc5.3-x86_64.**
+libclang
+venv
+build
+.qt_for_python

@@ -1,0 +1,14 @@
+setuptools==62.3.3 # resolves https://codereview.qt-project.org/c/pyside/pyside-setup/+/415268
+conan==1.50.0
+build==0.7
+sphinx
+sphinx-panels
+six
+wheel>=0.35
+PyOpenGL
+pyinstaller==3.6
+nuitka
+dataclasses; python_version < '3.7'
+furo
+sphinx-copybutton
+distro; sys_platform == 'linux'

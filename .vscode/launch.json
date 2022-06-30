@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "conan install package",
+            "type": "python",
+            "request": "launch",
+            "program": "/home/nir/.local/bin/conan",
+            "console": "integratedTerminal",
+            "args": ["install", ".","-r", "qt", "--build=missing", "--profile=./profiles/linux-x86_64-gcc", "-if", "build"]
+        },
+           
+        {
+            "name": "conan build package",
+            "type": "python",
+            "request": "launch",
+            "program": "/home/nir/.local/bin/conan",
+            "console": "integratedTerminal",
+            "args": ["build", ".","-bf", "./build"]
+        },
+    ]
+        
+}

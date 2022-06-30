@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/nir/Desktop/issues/binding-example-qtquickitem'
+make: Leaving directory '/home/nir/Desktop/issues/binding-example-qtquickitem'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

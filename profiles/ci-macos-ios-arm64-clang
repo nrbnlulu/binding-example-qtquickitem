@@ -1,0 +1,4 @@
+include(./macos-ios-arm64-clang)
+
+[options]
+qtbase:qt_host_path=$CI_QT_HOST_PATH

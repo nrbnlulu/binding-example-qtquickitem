@@ -1,0 +1,5 @@
+include(./linux-arm64-qcc)
+
+[options]
+qtbase:qt_host_path=$CI_QT_HOST_PATH
+qtbase:cmake_args_qtbase="-DQT_FEATURE_dbus=OFF -DQT_BUILD_EXAMPLES=OFF -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE=$QNX_710/qnx-toolchain-aarch64le.cmake"

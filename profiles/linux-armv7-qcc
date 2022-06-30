@@ -1,0 +1,6 @@
+include(./baseprofiles/linux-armv7-qcc)
+
+[options]
+qtbase:dbus=no
+qtbase:nomake=tests;examples
+qtbase:cmake_args_qtbase="-DCMAKE_TOOLCHAIN_FILE=$QNX_710/qnx-toolchain-armv7le.cmake"
