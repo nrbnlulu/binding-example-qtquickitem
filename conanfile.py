@@ -40,6 +40,8 @@ class RegexConan(ConanFile):
         self.copy("CMakeLists.txt")
 
     def build(self):
+        import setuptools
+        assert setuptools.__version__ == '62.3.3'
         try:
             from PySide6 import QtCore
             assert QtCore.__version__ == "6.3.1"
