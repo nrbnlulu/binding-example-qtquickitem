@@ -6,5 +6,5 @@ conan config set general.cmake_generator=Ninja
 conan install . -r qt --build=missing --profile=./profiles/linux-x86_64-gcc -if build
 source ./build/activate.sh
 conan build . -bf build -if build
-
+source ./build/deactivate.sh
 

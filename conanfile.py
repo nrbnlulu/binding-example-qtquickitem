@@ -41,7 +41,7 @@ class RegexConan(ConanFile):
 
     def build(self):
         try:
-            from PySide import QtCore
+            from PySide6 import QtCore
             assert QtCore.__version__ == "6.3.1"
         except ImportError:
             if not (Path(self.build_folder) / "pyside-setup").exists():
